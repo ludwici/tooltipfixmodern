@@ -1,27 +1,28 @@
 {
   "schemaVersion": 1,
-  "id": "tooltipfix",
-  "version": "1.2.0-26.1",
+  "id": "tooltipfixmodern",
+  "version": "${version}",
   "name": "ToolTip Fix",
-  "description": "Fixes ToolTips from running off the screen",
+  "description": "Fixes tooltips from running off the screen",
   "authors": [
-    "kyrptonaught"
+    "ludwici"
   ],
   "contact": {
-    "homepage": "https://www.curseforge.com/minecraft/mc-mods/tooltipfix",
-    "sources": "https://github.com/kyrptonaught/tooltipfix"
+    "homepage": "https://www.curseforge.com/minecraft/mc-mods/tooltipfixmodern",
+    "sources": "https://github.com/ludwici/tooltipfixmodern"
   },
   "license": "MIT",
-  "icon": "assets/tooltipfix/icon.png",
+  "icon": "assets/tooltipfixmodern/icon.png",
   "environment": "client",
   "mixins": [
     {
-      "config": "tooltipfix.mixins.json",
+      "config": "tooltipfixmodern.mixins.json",
       "environment": "client"
     }
   ],
   "depends": {
     "fabricloader": ">=0.19.2",
-    "fabric": "*"
+    "minecraft": ">=26.1 <26.2",
+    "java": ">=25"
   }
 }
