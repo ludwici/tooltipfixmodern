@@ -23,9 +23,4 @@ public abstract class FixToolTipMixin {
     private List<ClientTooltipComponent> tooltipfix$prepareTooltip(List<ClientTooltipComponent> components, Font font, List<ClientTooltipComponent> original, int x, int y, ClientTooltipPositioner positioner, Identifier style) {
         return Helper.prepareTooltip(components, font, x, guiWidth());
     }
-
-    @ModifyVariable(method = "setTooltipForNextFrameInternal(Lnet/minecraft/client/gui/Font;Ljava/util/List;IILnet/minecraft/client/gui/screens/inventory/tooltip/ClientTooltipPositioner;Lnet/minecraft/resources/Identifier;Z)V", at = @At("HEAD"), argsOnly = true, index = 2)
-    private List<ClientTooltipComponent> tooltipfix$prepareDeferredTooltip(List<ClientTooltipComponent> components, Font font, List<ClientTooltipComponent> original, int x, int y, ClientTooltipPositioner positioner, Identifier style, boolean replaceExisting) {
-        return Helper.prepareTooltip(components, font, x, guiWidth());
-    }
 }
